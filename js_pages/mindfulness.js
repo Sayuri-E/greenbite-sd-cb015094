@@ -14,7 +14,7 @@ setInterval(() => {
   }
 }, 3400);
 
-// -------- Timer Tool --------
+// Timer Tool 
 const timeDisplay = document.getElementById("time");
 const startBtn = document.getElementById("startBtn");
 const resetBtn = document.getElementById("resetBtn");
@@ -59,7 +59,7 @@ startBtn.addEventListener("click", startTimer);
 resetBtn.addEventListener("click", resetTimer);
 updateDisplay();
 
-// -------- Ambient Sounds --------
+//  Ambient Sounds
 const soundBtns = document.querySelectorAll(".sound-btn");
 let currentAudio = null;
 
@@ -84,7 +84,7 @@ soundBtns.forEach((btn) => {
   });
 });
 
-// -------- Progress Tracking --------
+//Progress Tracking
 const sessionCountEl = document.getElementById("sessionCount");
 
 function loadSessions() {
@@ -101,9 +101,9 @@ function addSession() {
 
 loadSessions();
 
-// ==========================
+
 // HAMBURGER MENU (MOBILE)
-// ==========================
+
 
 // Get hamburger icon and nav menu
 const hamburger = document.getElementById("hamburger");

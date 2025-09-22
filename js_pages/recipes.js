@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const categorySelect = document.getElementById("category");
   const recipeSections = document.querySelectorAll(".container-recipe");
 
-  // ---------- SEARCH & FILTER ----------
+  //SEARCH & FILTER 
   const normalize = (s) =>
     (s || "").toLowerCase().trim().replace(/\s+/g, " ").replace(/s$/, ""); // fixes Dessert vs Desserts, Snacks vs Snack
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   filterRecipes(); // run once on load
 
   const recipeData = {
-    // -------------------- BREAKFAST --------------------
+    // BREAKFAST
     "blueberry-and-banana-muffin": {
       title: "Blueberry and Banana Muffin",
       ingredients: [
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
 
-    // -------------------- LUNCH --------------------
+    //LUNCH
     "chicken-pizza-naan": {
       title: "Chicken Pizza Naan",
       ingredients: [
@@ -268,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
 
-    // -------------------- DINNER --------------------
+    //  DINNER 
     "mac-and-cheese-with-tomatoes": {
       title: "Mac and Cheese with Tomatoes",
       ingredients: [
@@ -386,7 +386,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
 
-    // -------------------- DESSERTS --------------------
+    //DESSERTS
     "chocolate-zucchini-bread": {
       title: "Chocolate Zucchini Bread",
       ingredients: [
@@ -499,7 +499,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
 
-    // -------------------- SNACKS --------------------
+    // SNACKS 
     "apple-apricot-and-sultana-squares": {
       title: "Apple, apricot and sultana squares",
       ingredients: [
@@ -609,7 +609,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .replace(/\s+/g, "-")
       .replace(/-+/g, "-");
 
-  // ---------- MODAL ----------
+  // MODAL
   function ensureModalRoot() {
     let root = document.getElementById("recipe-modal-root");
     if (root) return root;
@@ -705,7 +705,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (root) root.querySelector(".rb-overlay").style.display = "none";
   }
 
-  // ---------- CLICK HANDLERS ----------
+  //CLICK HANDLERS
   function attachRecipeOpenHandlers() {
     const cards = document.querySelectorAll(".recipe-card");
     cards.forEach((card) => {
@@ -737,9 +737,9 @@ document.addEventListener("DOMContentLoaded", () => {
   attachRecipeOpenHandlers();
 });
 
-// ==========================
+
 // HAMBURGER MENU (MOBILE)
-// ==========================
+
 
 // Get hamburger icon and nav menu
 const hamburger = document.getElementById("hamburger");

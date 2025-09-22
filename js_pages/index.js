@@ -22,9 +22,9 @@ function rotateSlogan() {
 // Run the slogan rotator
 setInterval(rotateSlogan, 3000);
 
-// ==========================
+
 // HEALTH TIP OF THE DAY
-// ==========================
+
 
 // List of health tips (can expand as you want)
 const healthTips = [
@@ -43,9 +43,9 @@ const tipIndex = today % healthTips.length;
 // Insert tip into the page
 document.getElementById("dailyTip").textContent = healthTips[tipIndex];
 
-// ==========================
+
 // NEWSLETTER SUBSCRIPTION
-// ==========================
+
 
 // Get newsletter form and input
 const newsletterForm = document.getElementById("newsletterForm");
@@ -73,9 +73,9 @@ newsletterForm.addEventListener("submit", function (e) {
   }
 });
 
-// ==========================
+
 // HAMBURGER MENU (MOBILE)
-// ==========================
+
 
 // Get hamburger icon and nav menu
 const hamburger = document.getElementById("hamburger");

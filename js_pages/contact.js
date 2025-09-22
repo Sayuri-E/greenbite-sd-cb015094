@@ -1,9 +1,9 @@
-// 1️⃣ Get references to important elements from the HTML
+// 1 Get references to important elements from the HTML
 const form = document.getElementById("feedbackForm"); // The feedback form
 const confirmation = document.getElementById("confirmation"); // The paragraph to show messages
 const accordionHeaders = document.querySelectorAll(".accordion-header"); // All FAQ headers
 
-// 2️⃣ Add an event listener for form submission
+// 2️ Add an event listener for form submission
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Prevents the page from refreshing
 
@@ -12,9 +12,9 @@ form.addEventListener("submit", function (event) {
   const email = document.getElementById("email").value.trim();
   const message = document.querySelector("textarea").value.trim();
 
-  // -----------------------------
+ 
   // FORM VALIDATION
-  // -----------------------------
+
 
   // Check if all fields are filled
   if (!name || !email || !message) {
@@ -31,9 +31,9 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // -----------------------------
+
   // SAVE FEEDBACK TO LOCALSTORAGE
-  // -----------------------------
+
 
   // Create a feedback object with data
   const feedback = {
@@ -52,9 +52,9 @@ form.addEventListener("submit", function (event) {
   // Save updated array back to localStorage
   localStorage.setItem("feedback", JSON.stringify(storedFeedback));
 
-  // -----------------------------
+
   // SHOW CONFIRMATION MESSAGE
-  // -----------------------------
+
   confirmation.textContent = "Thank you! Your feedback has been submitted.";
   confirmation.style.color = "green";
 
@@ -76,9 +76,9 @@ accordionHeaders.forEach((header) => {
   });
 });
 
-// ==========================
+
 // HAMBURGER MENU (MOBILE)
-// ==========================
+
 
 // Get hamburger icon and nav menu
 const hamburger = document.getElementById("hamburger");

@@ -42,7 +42,7 @@ let generatedWorkout = []; // holds the selected exercises
 let currentIndex = 0; // which exercise we are on
 let countdown; // the timer interval (so we can stop it)
 
-// STEP 4: WHEN USER SUBMITS THE FORM
+//  WHEN USER SUBMITS THE FORM
 
 workoutForm.addEventListener("submit", function (event) {
   event.preventDefault(); // stop page from refreshing
@@ -72,7 +72,7 @@ workoutForm.addEventListener("submit", function (event) {
   currentIndex = 0;
 });
 
-// STEP 5: START WORKOUT BUTTON
+// START WORKOUT BUTTON
 
 startWorkoutBtn.addEventListener("click", function () {
   // Hide the plan, show timer
@@ -83,7 +83,7 @@ startWorkoutBtn.addEventListener("click", function () {
   startExercise();
 });
 
-// STEP 6: NEXT EXERCISE BUTTON
+//  NEXT EXERCISE BUTTON
 
 nextExerciseBtn.addEventListener("click", function () {
   // If there are more exercises left
@@ -98,7 +98,7 @@ nextExerciseBtn.addEventListener("click", function () {
   }
 });
 
-// STEP 7: START AN EXERCISE + TIMER
+//  START AN EXERCISE + TIMER
 
 function startExercise() {
   let timeLeft = 30; // each exercise = 30 seconds
@@ -149,9 +149,9 @@ function pickRandomExercises(list, count) {
   return result;
 }
 
-// ==========================
+
 // HAMBURGER MENU (MOBILE)
-// ==========================
+
 
 // Get hamburger icon and nav menu
 const hamburger = document.getElementById("hamburger");
