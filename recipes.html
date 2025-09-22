@@ -203,6 +203,10 @@
         text-align: center;
       }
 
+      .hidden-label {
+        display: none;
+      }
+
       @media (max-width: 768px) {
         /* Hide nav menu by default */
         .nav-menu {
@@ -320,6 +324,7 @@
       <div class="recipes-header">
         <h1>Healthy Recipes</h1>
         <form id="filterForm" class="filters">
+          <label for="filter" class="hidden-label">Hidden Label</label>
           <input type="search" id="search" />
           <select id="category">
             <option value="All">All Categories</option>
@@ -339,7 +344,7 @@
         <h2>Breakfast</h2>
         <div class="recipe-card">
           <img
-            src="images/breakfast/muffin.webp"    
+            src="images/breakfast/muffin.webp"
             alt="muffin"
             loading="lazy"
           /><br />
@@ -368,11 +373,7 @@
         </div>
 
         <div class="recipe-card">
-          <img
-            src="images/breakfast/salad.webp"
-            alt="salad"
-            loading="lazy"
-          />
+          <img src="images/breakfast/salad.webp" alt="salad" loading="lazy" />
           <p>Winter Fruit Salad</p>
           <a href="" class="btn">Try it Out!</a>
         </div>
@@ -388,11 +389,7 @@
         </div>
 
         <div class="recipe-card">
-          <img
-            src="images/lunch/falafel.webp"
-            alt="falafel"
-            loading="lazy"
-          />
+          <img src="images/lunch/falafel.webp" alt="falafel" loading="lazy" />
           <p>Falafel</p>
           <a href="" class="btn">Try it Out!</a>
         </div>
